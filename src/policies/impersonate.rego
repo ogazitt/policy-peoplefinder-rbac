@@ -5,14 +5,14 @@ default visible = false
 default enabled = false
 
 allowed {
-    u = input.user
-    u.attr.department == "Operations"
-    u.attr.title == "IT Manager"
+    props = input.user.attributes.properties
+    props.department == "Operations"
+    props.title == "IT Manager"
 }
 
 visible {
-    u = input.user
-    u.attr.department == "Operations"
+    props = input.user.attributes.properties
+    props.department == "Operations"
 }
 
 enabled {

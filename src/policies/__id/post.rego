@@ -5,7 +5,8 @@ default visible = true
 default enabled = false
 
 allowed {
-    input.user.attr.department == "Operations"
+    props = input.user.attributes.properties
+    props.department == "Operations"
 }
 
 enabled {
