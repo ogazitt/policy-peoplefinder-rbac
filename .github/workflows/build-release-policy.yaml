@@ -42,5 +42,6 @@ jobs:
         ASERTO_PUSH_KEY: ${{ secrets.ASERTO_ENG_PUSH_KEY }}
       with:
         bundle: build/bundle.tar.gz
+        policy_registry: https://bundler.eng.aserto.com/v1
         release_id: ${{ steps.release.outputs.release_id }}
         verbose: true
