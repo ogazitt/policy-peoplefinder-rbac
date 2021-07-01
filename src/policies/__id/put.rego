@@ -1,14 +1,29 @@
 package peoplefinder.PUT.api.users.__id
 
 default allowed = false
-default visible = true
-default enabled = true
+default visible = false
+default enabled = false
 
-allowed {
-    props = input.user.attributes.properties
-    props.department == "Operations"
+f(decision) {
+  u = input.user
+  p = "peoplefinder.PUT.api.users.__id"
+
+  some i
+  data.roles.roles[u.attributes.roles[i]].perms[p][decision]
 }
 
 allowed {
-    input.user.id == input.resource.id
+  f("allowed")
+}
+
+allowed {
+  input.user.id == input.resource.id
+}
+
+visible {
+  f("visible")
+}
+
+enabled {
+  f("enabled")
 }

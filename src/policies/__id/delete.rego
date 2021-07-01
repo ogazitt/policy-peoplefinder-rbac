@@ -4,17 +4,22 @@ default allowed = false
 default visible = false
 default enabled = false
 
+f(decision) {
+  u = input.user
+  p = "peoplefinder.DELETE.api.users.__id"
+
+  some i
+  data.roles.roles[u.attributes.roles[i]].perms[p][decision]
+}
+
 allowed {
-    props = input.user.attributes.properties
-    props.department == "Operations"
-    props.title == "IT Manager"
+  f("allowed")
 }
 
 visible {
-    props = input.user.attributes.properties
-    props.department == "Operations"
+  f("visible")
 }
 
 enabled {
-	allowed
+  f("enabled")
 }

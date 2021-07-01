@@ -4,16 +4,22 @@ default allowed = false
 default visible = false
 default enabled = false
 
+f(decision) {
+  u = input.user
+  p = "peoplefinder.POST.api.users"
+
+  some i
+  data.roles.roles[u.attributes.roles[i]].perms[p][decision]
+}
+
 allowed {
-    props = input.user.attributes.properties
-    props.department == "Operations"
-    props.title == "IT Manager"
+  f("allowed")
 }
 
 visible {
-	allowed
+  f("visible")
 }
 
 enabled {
-	allowed
+  f("enabled")
 }

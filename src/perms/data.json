@@ -1,0 +1,25 @@
+{
+    "perms": {
+        "peoplefinder.GET.api.users": {
+            "description": "get all users"
+        },
+        "peoplefinder.POST.api.users": {
+            "description": "create a new user"
+        },
+        "peoplefinder.IMPERSONATE.api.users": {
+            "description": "impersonate a user"
+        },
+        "peoplefinder.GET.api.user.__id": {
+            "description": "get a user's information"
+        },
+        "peoplefinder.POST.api.user.__id": {
+            "description": "change a user's department and title"
+        },
+        "peoplefinder.PUT.api.user.__id": {
+            "description": "change a user's phone number"
+        },
+        "peoplefinder.DELETE.api.user.__id": {
+            "description": "delete a user"
+        }
+    }
+}
