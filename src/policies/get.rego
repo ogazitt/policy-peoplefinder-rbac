@@ -1,13 +1,13 @@
 package peoplefinder.GET.api.users
 
-import data.functions.user.has.permission
+import data.functions.user_has_permission
 
 default allowed = false
 default visible = false
 default enabled = false
 
 f(decision) {
-  permission("peoplefinder.GET.api.users")[decision]
+  user_has_permission("peoplefinder.GET.api.users")[decision]
 }
 
 allowed {
