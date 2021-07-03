@@ -13,7 +13,7 @@
                     "visible": false,
                     "enabled": false
                 },
-                "peoplefinder.IMPERSONATE.api.users": {
+                "peoplefinder.IMPERSONATE.api.users.__id": {
                     "allowed": false,
                     "visible": false,
                     "enabled": false
@@ -53,7 +53,7 @@
                     "visible": true,
                     "enabled": true
                 },
-                "peoplefinder.IMPERSONATE.api.users": {
+                "peoplefinder.IMPERSONATE.api.users.__id": {
                     "allowed": false,
                     "visible": false,
                     "enabled": false
@@ -93,7 +93,7 @@
                     "visible": true,
                     "enabled": true
                 },
-                "peoplefinder.IMPERSONATE.api.users": {
+                "peoplefinder.IMPERSONATE.api.users.__id": {
                     "allowed": true,
                     "visible": true,
                     "enabled": true
