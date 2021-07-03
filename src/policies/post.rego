@@ -1,15 +1,13 @@
 package peoplefinder.POST.api.users
 
+import data.functions.user_has_permission
+
 default allowed = false
 default visible = false
 default enabled = false
 
 f(decision) {
-  u = input.user
-  p = "peoplefinder.POST.api.users"
-
-  some i
-  data.roles.roles[u.applications.peoplefinder.roles[i]].perms[p][decision]
+  user_has_permission("peoplefinder.POST.api.users", decision)
 }
 
 allowed {
