@@ -7,7 +7,7 @@ default visible = false
 default enabled = false
 
 f(decision) {
-  user_has_permission("peoplefinder.GET.api.users")[decision]
+  user_has_permission("peoplefinder.GET.api.users", decision)
 }
 
 allowed {
