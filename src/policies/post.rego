@@ -9,7 +9,7 @@ f(decision) {
   p = "peoplefinder.POST.api.users"
 
   some i
-  data.roles.roles[u.attributes.roles[i]].perms[p][decision]
+  data.roles.roles[u.applications.peoplefinder.attributes.roles[i]].perms[p][decision]
 }
 
 allowed {
