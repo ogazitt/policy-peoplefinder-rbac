@@ -1,6 +1,6 @@
-# policy-peoplefinder
+# policy-peoplefinder-rbac
 
-This repository houses the Aserto policy for the PeopleFinder sample.
+This repository houses an RBAC-style Aserto policy for the PeopleFinder sample.
 
 ## Directory structure
 
