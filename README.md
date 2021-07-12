@@ -19,6 +19,6 @@ This repository houses an RBAC-style Aserto policy for the PeopleFinder sample.
 
 ## Releasing a new version
 
-`git tag {version}` will invoke the actions to create a new release (a policy bundle that can be delivered to the Aserto authorizer)
+`git tag {version} && git push --tags` will invoke the actions to create a new release (a policy bundle that can be delivered to the Aserto authorizer)
 
-e.g. `git tag v0.0.1` will create a new release with v0.0.1.
+e.g. `git tag v0.0.1 && git push --tags` will create a new release with v0.0.1.
